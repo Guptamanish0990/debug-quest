@@ -1,0 +1,51 @@
+/* DifficultyFilter.css */
+.difficulty-filter {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.difficulty-btn {
+  padding: 8px 20px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.difficulty-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.difficulty-btn.active {
+  border-color: #007bff;
+  background: #007bff;
+  color: white;
+}
+
+.difficulty-btn.active[data-difficulty="Easy"] {
+  border-color: #28a745;
+  background: #28a745;
+}
+
+.difficulty-btn.active[data-difficulty="Medium"] {
+  border-color: #ffc107;
+  background: #ffc107;
+  color: #212529;
+}
+
+.difficulty-btn.active[data-difficulty="Hard"] {
+  border-color: #dc3545;
+  background: #dc3545;
+}
