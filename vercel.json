@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd debug-quest-main/debug-quest && npm install && npm run build",
+  "outputDirectory": "debug-quest-main/debug-quest/dist",
+  "devCommand": "cd debug-quest-main/debug-quest && npm run dev",
+  "installCommand": "npm install && cd debug-quest-main/debug-quest && npm install"
+}
